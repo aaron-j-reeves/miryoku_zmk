@@ -5,7 +5,7 @@
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTY_FLIP \
 &kp ESC,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             &kp BKSP,           \
 &kp GRAVE,         U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp H,             U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SEMI),  &kp SQT,            \
-U_LT(U_SYM, TAB),  &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp FSLH,          U_LT(U_MEDIA, EQUAL)\
+U_LT(U_SYM, TAB),  &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp FSLH,          U_LT(U_MEDIA, EQUAL), \
 U_LT(U_BUTTON, MINUS),U_LT(U_FUN, DEL),MEH(LEFT),        MEH(RIGHT),        U_LT(U_NUM, RET),                     &kp SPACE,                            U_LT(U_NAV, BSLH), U_LT(U_MOUSE, LEFT),&mt_meh UP,       U_LT(U_BUTTON, RIGHT)
 
 #define MIRYOKU_ALTERNATIVES_TAP_QWERTY_FLIP \
@@ -33,9 +33,9 @@ U_LT(U_BUTTON, MINUS),U_LT(U_FUN, DEL),MEH(LEFT),        MEH(RIGHT),        U_LT
 &kp MINUS,         &kp UNDER,         &kp DEL,           &kp BSPC,          &kp RET,                              &kp SPACE,                            &kp BSLH,          &kp LEFT,          &kp DOWN,          &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
-&kp ESC,           _BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &kp BKSP,          \
-&kp GRAVE,         kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp EQUAL,         &kp N4,            &kp N5,            &kp N6,            &kp SEMI,          &kp SQT,           \
-&kp TAB,           _NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         &kp EQUAL,         \
+&kp ESC,           U_BOOT,           &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          &kp BKSP,          \
+&kp GRAVE,         &kp LGUI,         &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp EQUAL,         &kp N4,            &kp N5,            &kp N6,            &kp SEMI,          &kp SQT,           \
+&kp TAB,           U_NA,             &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         &kp EQUAL,         \
 &kp MINUS,         &kp UNDER,        &kp DEL,           &kp BSPC,          &kp RET,                              &kp SPACE,                            &kp BSLH,          &kp LEFT,          &kp DOWN,          &kp RIGHT
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \
@@ -49,5 +49,3 @@ U_LT(U_BUTTON, MINUS),U_LT(U_FUN, DEL),MEH(LEFT),        MEH(RIGHT),        U_LT
 &kp GRAVE,         &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp SLCK,          &kp F4,            &kp F5,            &kp F6,            &kp F11,           &kp SQT,           \
 &kp TAB,           U_NA,              &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA,              &kp PAUSE_BREAK,   &kp F1,            &kp F2,            &kp F3,            &kp F10,           &kp EQUAL,         \
 &kp MINUS,         &kp UNDER,         &kp DEL,           &kp BSPC,          &kp RET,                              &kp SPACE,                            &kp BSLH,          &kp LEFT,          &kp DOWN,          &kp RIGHT
-
-

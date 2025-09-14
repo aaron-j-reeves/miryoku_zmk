@@ -1,6 +1,14 @@
 // Copyright 2024 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+// Conditionally include your custom behaviors.
+#if __has_include("../miryoku/custom_config.dtsi")
+#include "../miryoku/custom_config.dtsi"
+#endif
+
+// Load standard Miryoku configurations
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/48/planck.h"
+
+// Load the main Miryoku keymap
 #include "../miryoku/miryoku.dtsi"

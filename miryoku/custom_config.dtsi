@@ -1,0 +1,34 @@
+#include <dt-bindings/zmk/keys.h>
+#pragma once
+
+&{
+    macros {
+        meh_press: meh_press {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHIFT &kp LALT>;
+        };
+        meh_release: meh_release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LCTRL &kp LSHIFT &kp LALT>;
+        };
+    };
+};
+
+&behaviors {
+    meh_hold: meh_hold {
+        compatible = "zmk,behavior-hold";
+        #binding-cells = <0>;
+        bindings = <&meh_press>, <&meh_release>;
+    };
+
+    mt_meh: mt_meh {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MT_MEH";
+        #binding-cells = <1>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+        bindings = <&meh_hold>, <&kp>;
+    };
+};

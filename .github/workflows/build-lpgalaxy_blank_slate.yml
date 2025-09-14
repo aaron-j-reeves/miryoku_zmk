@@ -1,0 +1,14 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build lpgalaxy_blank_slate'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["lpgalaxy_blank_slate"]'
+      layers: '["flip"]'
+      nav: '["invertedT"]'
+      clipboard: '["win"]'
